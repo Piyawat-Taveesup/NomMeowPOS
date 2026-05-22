@@ -658,10 +658,6 @@
 <!-- ── TOAST ── -->
 <div class="toast" id="toast"></div>
 
-<Footer>
-https://script.google.com/macros/s/AKfycbyCXDNIybw4h9osZ0piMVOmt37a9ilE9zf5WR99z1QShzC8Us93HhVzQzApLS0PbZaCkw/exec
-</Footer>
-
 <script>
 // ── STATE ──
 let products = JSON.parse(localStorage.getItem('pos_products') || '[]');
@@ -669,7 +665,7 @@ let cart = [];
 let selectedPayment = 'Cash';
 let editingProductId = null;
 let salesLog = JSON.parse(localStorage.getItem('pos_sales') || '[]');
-let settings = JSON.parse(localStorage.getItem('pos_settings') || '{"scriptUrl":"","taxRate":0,"storeName":"My Store"}');
+let settings = JSON.parse(localStorage.getItem('pos_settings') || '{"scriptUrl":"https://script.google.com/macros/s/AKfycbyCXDNIybw4h9osZ0piMVOmt37a9ilE9zf5WR99z1QShzC8Us93HhVzQzApLS0PbZaCkw/exec","taxRate":0,"storeName":"My Store"}');
 
 // ── CLOCK ──
 function updateClock() {
